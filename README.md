@@ -1,5 +1,3 @@
-
-```markdown
 # Interactive Generative Art Gallery
 
 Welcome to the **Interactive Generative Art Gallery** – a creative web application that showcases generative art, data visualizations, and interactive tools for manipulating images and art. This project demonstrates how to combine Python, Flask, and various libraries to build an engaging digital art gallery.
@@ -8,7 +6,7 @@ Welcome to the **Interactive Generative Art Gallery** – a creative web applica
 
 The Interactive Generative Art Gallery features:
 
-- **Generative Art Pieces:** Randomly generated artworks created using Python’s object-oriented programming, loops, and conditionals.
+- **Generative Art Pieces:** Randomly generated artworks created using Python's object-oriented programming, loops, and conditionals.
 - **Data-Driven Visualizations:** Creative visual representations of data (e.g., weather data) using Matplotlib and Pandas.
 - **Image Manipulation:** A tool (Image Lab) that allows users to upload images and apply a glitch effect.
 - **Interactive Art Canvas:** An HTML5 canvas where users can click to generate colorful, random shapes.
@@ -39,13 +37,11 @@ The Interactive Generative Art Gallery features:
    ```
 
 2. **Create a Virtual Environment:**
-   It's recommended to use a virtual environment to manage dependencies.
    ```bash
    python -m venv venv
    ```
 
 3. **Activate the Virtual Environment:**
-
    - On **Windows:**
      ```bash
      venv\Scripts\activate.bat
@@ -56,11 +52,10 @@ The Interactive Generative Art Gallery features:
      ```
 
 4. **Install Dependencies:**
-   Install the required Python packages using pip:
    ```bash
    pip install flask pillow matplotlib pandas numpy
    ```
-   If you plan to use audio processing features, you may also need:
+   For audio processing (optional):
    ```bash
    pip install pydub
    ```
@@ -77,7 +72,6 @@ The Interactive Generative Art Gallery features:
    ```
    http://127.0.0.1:5000
    ```
-   You will see the homepage with links to the Gallery, DataViz, ImageLab, and Interactive Art pages.
 
 ## Project Structure
 
@@ -98,30 +92,18 @@ interactive-generative-art-gallery/
     └── artwork_detail.html
 ```
 
-- **app.py:** Main Flask application with all route definitions.
-- **templates/**: Contains all HTML templates with inline CSS.
-- **static/js/**: Contains JavaScript files for interactive functionality.
-- **static/uploads/**: Directory for storing user-uploaded images and audio files.
-
 ## Troubleshooting
 
-- **Template Not Found Error (e.g., image-lab.html):**  
-  Ensure that all HTML template files (e.g., `image-lab.html`) are placed in the `templates/` folder and named exactly as referenced.
-
-- **Cyberpunk Art Generation Error:**  
-  If you encounter an error related to `_draw_data_stream`, make sure that the call to `self._draw_data_stream(color)` has been removed from the `generate_cyberpunk()` method in `app.py`.
-
-- **404 Errors for Static Files:**  
-  Double-check your directory structure. If you see a 404 for `/static/css/styles.css`, verify that your external CSS file exists and that your routes or inline styles are being used instead.
-
-- **Virtual Environment Issues:**  
-  Ensure you activate the virtual environment correctly before installing dependencies and running the app.
+- **Template Not Found Error:** Ensure all HTML template files are in the `templates/` folder and named correctly.
+- **Cyberpunk Art Generation Error:** Verify that `self._draw_data_stream(color)` call is removed from `generate_cyberpunk()` method.
+- **404 Errors for Static Files:** Check directory structure and route configurations.
+- **Virtual Environment Issues:** Confirm proper virtual environment activation before installing dependencies.
 
 ## Future Enhancements
 
-- **Audio Processing:** Add more advanced audio manipulation using PyDub and additional filters.
+- **Audio Processing:** Add advanced audio manipulation using PyDub and additional filters.
 - **Machine Learning:** Integrate style transfer or art caption generation using TensorFlow or PyTorch.
-- **User Interaction:** Implement user authentication, saved galleries, or interactive art customization tools.
+- **User Interaction:** Implement user authentication, saved galleries, and interactive art customization tools.
 
 ## License
 
@@ -130,4 +112,3 @@ This project is for educational purposes. Feel free to modify and improve it for
 ---
 
 Enjoy exploring the intersection of art and technology with the Interactive Generative Art Gallery!
-```
